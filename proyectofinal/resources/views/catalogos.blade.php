@@ -1,4 +1,4 @@
 @extends('layouts.layout')
 @section('content')
-    <h2>cupones</h2>
+    <h2>catalogos</h2>
 @stop
