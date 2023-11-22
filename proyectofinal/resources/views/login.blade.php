@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 
-<html lang="en" class="light-style layout-wide  customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
+<html lang="en" class="light-style layout-wide  customizer-hide" dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-templat">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
- 
-  <title>WebStore </title>
-  
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
   <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
   <!-- Canonical SEO -->
   <link rel="canonical" href="https://1.envato.market/vuexy_admin">
-
+  <title> WebStore </title>
+  
 
   <!-- ? PROD Only: Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
   <script>
@@ -124,8 +122,10 @@
                 </div>
               </div>
               <div class="mb-3">
-                <button class="btn btn-primary d-grid w-100" type="submit">Inicia Sesion</button>
-              </div>
+                <a href="{{ asset( '/index') }}" class="btn btn-primary d-grid w-100">Inicia Sesión</a>
+            </div>
+           
+            
             </form>
 
             <p class="text-center">
