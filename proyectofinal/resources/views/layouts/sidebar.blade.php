@@ -59,17 +59,17 @@
             
         </li>
         <li class="menu-item">
-            <a href="{{ asset('/catalogos') }}" class="menu-link">
+            <a href="categorias" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-catalogue">
                 <img width="20" height="20" src="https://img.icons8.com/ios/50/open-book--v1.png" alt="open-book--v1"/>
                 </i>
-                <div data-i18n="Catálogos">Catálogos</div>
+                <div data-i18n="fgfgfg">fgfgfg</div>
             </a>
             
         </li>
         
         <li class="menu-item">
-            <a href="{{ asset('/configuraciones') }}" class="menu-link">
+            <a href="configuraciones" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-setting">
                 <img width="20" height="20" src="https://img.icons8.com/windows/32/Production-order.png" alt="Production-order"/>
                 </i>

@@ -1,4 +1,8 @@
 @extends('layouts.layout')
 @section('content')
-    <h2>catalogos</h2>
+ 
+
+
+<div>Hola</div>
+
 @stop

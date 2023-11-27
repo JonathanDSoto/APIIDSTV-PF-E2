@@ -3,5 +3,20 @@
                 color: rgb(77, 50, 179);
                
                 }
+                /* public/css/custom.css */
+
+                .discount-section {
+                   background-color: #f8f9fa;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                 }
+
+                .coupon-alert {
+                  margin-top: 10px;
+                }
+
+
+
+                
             
             </style>

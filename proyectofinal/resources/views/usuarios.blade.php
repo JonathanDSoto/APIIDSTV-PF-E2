@@ -1,5 +1,7 @@
 @extends('layouts.layout')
 @section('content')
+
+
 <div class="card">
     <h5 class="card-header"></h5>
     <div class="table-responsive text-nowrap">

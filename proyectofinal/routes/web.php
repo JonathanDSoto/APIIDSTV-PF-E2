@@ -31,11 +31,12 @@ Route::get('/inventarios', function () {
     return view('inventarios');
 });
 
-Route::get('/catalogos', function () {
-    return view('catalogos');
+Route::get('/categorias', function () {
+    return view('categorias');
 });
 
 Route::get('/configuraciones', function () {
     return view('configuraciones');
 });
+
 

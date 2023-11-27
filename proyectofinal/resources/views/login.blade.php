@@ -10,7 +10,54 @@
   <!-- Canonical SEO -->
   <link rel="canonical" href="https://1.envato.market/vuexy_admin">
   <title> WebStore </title>
-  
+  <!-- ... (tu contenido de la etiqueta head existente) ... -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Función para validar los campos del formulario
+      function validarFormulario() {
+        var emailUsuario = document.getElementById('email').value;
+        var contraseña = document.getElementById('password').value;
+
+        // Validación básica, puedes personalizarla según tus necesidades
+        if (emailUsuario.trim() === '') {
+          alert('Por favor, ingresa tu correo electrónico o nombre de usuario.');
+          return false;
+        }
+
+        if (contraseña.trim() === '') {
+          alert('Por favor, ingresa tu contraseña.');
+          return false;
+        }
+
+        return true;
+      }
+
+      // Adjunta la función de validación al evento de envío del formulario
+      document.getElementById('formAuthentication').addEventListener('submit', function (evento) {
+        if (!validarFormulario()) {
+          evento.preventDefault(); // Evita el envío del formulario si la validación falla
+        }
+      });
+
+      // Alternar visibilidad de la contraseña
+      var toggleContraseña = document.querySelector('.form-password-toggle');
+      var entradaContraseña = document.getElementById('password');
+      var iconoOjo = document.querySelector('.ti-eye-off');
+
+      toggleContraseña.addEventListener('click', function () {
+        if (entradaContraseña.type === 'password') {
+          entradaContraseña.type = 'text';
+          iconoOjo.classList.remove('ti-eye-off');
+          iconoOjo.classList.add('ti-eye');
+        } else {
+          entradaContraseña.type = 'password';
+          iconoOjo.classList.remove('ti-eye');
+          iconoOjo.classList.add('ti-eye-off');
+        }
+      });
+    });
+  </script>
 
   <!-- ? PROD Only: Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
   <script>
