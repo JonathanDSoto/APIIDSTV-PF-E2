@@ -9,28 +9,117 @@
 <head>
     <!-- ... Otras etiquetas head ... -->
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+
+        }
+        .btn-agregar{
+            background-color: cornflowerblue;
+            color:white;
+            padding: 5px 10px;
+        }
+        .btn-agregar:hover{
+            color: yellow;
+        }
+        .btn-borrar{
+            background-color: red;
+            color:white;
+            padding: 5px 10px;
+        }
+        .btn-editar{
+            background-color: blueviolet;
+            color:white;
+            padding: 5px 10px;
+        }
+
+
+
+    </style>
 </head>
 <body>
-    <!-- Barra de navegación y otras partes de la interfaz comunes -->
-    
-    <!-- Sección de descuentos/cupones -->
-    <div class="discount-section">
-
-      <div class="ofert">
-        <div>   <h4>Ofertas😮😮</h4></div>
-        <img class=" d-block w-15" src=" ../../assets/img/backgrounds/ofertas.png" alt=" <h4>Ofertas</h4>" />
-        <div class="carousel-caption d-none d-md-block">
-         
-        </div>
-
-        <p>Revisa Periodicamente Nuestros Cupones de Descuentos:</p>
-        <!-- Aquí puedes mostrar los descuentos o cupones disponibles actualmente -->
-        <div class="coupon-alert alert alert-success">
-            ¡Descuento del 5% aplicado automáticamente en tu carrito!
-        </div>
+    <div class="contenedor">
+        <h2>Cupones</h2>
+        <a class="btn-agregar" href="">Agregar cupon</a>
     </div>
-    
 
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Cantidad</th>
+                <th>Caducidad</th>
+                <th>Accion</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td>Black friday</td>
+                <td>50%</td>
+                <td>27/11/2023</td>
+                <td>
+                    <a class="btn-borrar" href="">Borrar</a> 
+                    <a class="btn-editar" href="">Editar</a> 
+                </td>
+
+            </tr>
+            <tr>
+                <td>Black friday</td>
+                <td>50%</td>
+                <td>27/11/2023</td>
+                <td>
+                    <a class="btn-borrar" href="">Borrar</a> 
+                    <a class="btn-editar" href="">Editar</a> 
+                </td>
+            </tr>
+            <tr>
+                <td>Black friday</td>
+                <td>50%</td>
+                <td>27/11/2023</td>
+                <td>
+                    <a class="btn-borrar" href="">Borrar</a> 
+                    <a class="btn-editar" href="">Editar</a> 
+                </td>
+            </tr>
+            <tr>
+                <td>Black friday</td>
+                <td>50%</td>
+                <td>27/11/2023</td>
+                <td>
+                    <a class="btn-borrar" href="">Borrar</a> 
+                    <a class="btn-editar" href="">Editar</a> 
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
    
 </body>
 </html>

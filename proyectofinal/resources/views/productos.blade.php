@@ -1,90 +1,132 @@
 @extends('layouts.layout')
 @section('content')
-@section('sidebar')
+
     
-        <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu E-Commerce - Inventario</title>
+    <!-- Agrega tus estilos CSS aquí -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+  
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+  
+        th,
+        td {
+            padding: 10px;
+            text-align: center;
+  
+        }
+  
+        th {
+            background-color: #f2f2f2;
+        }
+        .contenedor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+  
+  
+        }
+        .btn-agregar{
+            background-color: cornflowerblue;
+            color:white;
+            padding: 5px 10px;
+        }
+        .btn-agregar:hover{
+            color: yellow;
+        }
+        .btn-borrar{
+            background-color: red;
+            color:white;
+            padding: 5px 10px;
+        }
+        .btn-editar{
+            background-color: blueviolet;
+            color:white;
+            padding: 5px 10px;
+        }
+        .img-producto{
+          width: 60px;
+        }
+  
+  
+  
+    </style>
+  </head>
+<body>
+
+  <div class="contenedor">
+    <h2>Productos</h2>
+    <a class="btn-agregar" href="">Agregar producto</a>
+  </div>
+
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Precio</th>
+        <th>Categoría</th>
+        <th>Fabricante</th>
+        <th>Cupón</th>
+        <th>Descripción</th>
+        <th>Imagen</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí puedes usar un bucle para mostrar tus productos -->
+      <tr>
+        <td>Producto 1</td>
+        <td>$19.99</td>
+        <td>Ropa</td>
+        <td>Fabricante A</td>
+        <td>DESC10</td>
+        <td>Descripción del producto 1.</td>
+        <td><img class="img-producto" src="../assets/img/backgrounds/apple.jpg" alt="Imagen Producto 1"></td>
+        <td>
+          <a class="btn-borrar" href="">Borrar</a> 
+          <a class="btn-editar" href="">Editar</a> 
+      </td>
+      </tr>
+      <tr>
+        <td>Producto 2</td>
+        <td>$29.99</td>
+        <td>Zapatos</td>
+        <td>Fabricante B</td>
+        <td>SALE20</td>
+        <td>Descripción del producto 2.</td>
+        <td><img class="img-producto" src="../assets/img/backgrounds/airpods.png" alt="Imagen Producto 2"></td>
+        <td>
+          <a class="btn-borrar" href="">Borrar</a> 
+          <a class="btn-editar" href="">Editar</a> 
+      </td>
+      </tr>
+      <!-- Agrega más filas  -->
+    </tbody>
+  </table>
+
+  <!-- Agrega tus scripts  -->
+
+</body>
+</html>
+
 
             
             
-            <html lang="en" class="light-style layout-navbar-fixed layout-menu-fixed layout-compact " dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template">
             
-              <head>
-                <meta charset="utf-8" />
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-            
-                <title>Carousel - UI elements </title>
-            
-                
-                <meta name="description" content="Start your development with a Dashboard for Bootstrap 5" />
-                <meta name="keywords" content="dashboard, bootstrap 5 dashboard, bootstrap 5 design, bootstrap 5">
-                <!-- Canonical SEO -->
-                <link rel="canonical" href="https://1.envato.market/vuexy_admin">
-                
-                
-                <!-- ? PROD Only: Google Tag Manager (Default ThemeSelection: GTM-5DDHKGP, PixInvent: GTM-5J3LMKC) -->
-                <script>
-                    (function(w, d, s, l, i) {
-                        w[l] = w[l] || [];
-                        w[l].push({
-                            'gtm.start': new Date().getTime(),
-                            event: 'gtm.js'
-                        });
-                        var f = d.getElementsByTagName(s)[0],
-                            j = d.createElement(s),
-                            dl = l != 'dataLayer' ? '&l=' + l : '';
-                        j.async = true;
-                        j.src =
-                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                        f.parentNode.insertBefore(j, f);
-                    })(window, document, 'script', 'dataLayer', 'GTM-5J3LMKC');
-                </script>
-                <!-- End Google Tag Manager -->
-                
-                <!-- Favicon -->
-                <link rel="icon" type="image/x-icon" href="../../assets/img/favicon/favicon.ico" />
-            
-                <!-- Fonts -->
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;ampdisplay=swap" rel="stylesheet">
-            
-                <!-- Icons -->
-                <link rel="stylesheet" href="../../assets/vendor/fonts/fontawesome.css" />
-                <link rel="stylesheet" href="../../assets/vendor/fonts/tabler-icons.css"/>
-                <link rel="stylesheet" href="../../assets/vendor/fonts/flag-icons.css" />
-            
-                <!-- Core CSS -->
-                <link rel="stylesheet" href="../../assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
-                <link rel="stylesheet" href="../../assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
-                <link rel="stylesheet" href="../../assets/css/demo.css" />
-                
-                <!-- Vendors CSS -->
-                <link rel="stylesheet" href="../../assets/vendor/libs/node-waves/node-waves.css" />
-                <link rel="stylesheet" href="../../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
-                <link rel="stylesheet" href="../../assets/vendor/libs/typeahead-js/typeahead.css" />
-                <link rel="stylesheet" href="../../assets/vendor/libs/swiper/swiper.css" />
-            
-                <!-- Page CSS -->
-                <link rel="stylesheet" href="../../assets/vendor/css/pages/ui-carousel.css" />
-            
-                <!-- Helpers -->
-                <script src="../../assets/vendor/js/helpers.js"></script>
-                <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
-                <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
-                <script src="../../assets/vendor/js/template-customizer.js"></script>
-                <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
-                <script src="../../assets/js/config.js"></script>
-                
-            </head>
-            
-            <body>
-            
-                 
-            
-            </html>
-            
-            <!-- beautify ignore:end -->
-
 
 
     

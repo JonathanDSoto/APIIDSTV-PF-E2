@@ -47,8 +47,8 @@
                 </i>
                 <div data-i18n="Órdenes">Órdenes</div>
             </a>
-            
-        </li> 
+
+
         <li class="menu-item">
             <a href="{{ asset('/inventarios') }}" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-inventory">
@@ -63,17 +63,17 @@
                 <i class="menu-icon tf-icons ti ti-catalogue">
                 <img width="20" height="20" src="https://img.icons8.com/ios/50/open-book--v1.png" alt="open-book--v1"/>
                 </i>
-                <div data-i18n="fgfgfg">fgfgfg</div>
+                <div data-i18n="categorias">categorias</div>
             </a>
             
         </li>
         
         <li class="menu-item">
-            <a href="configuraciones" class="menu-link">
+            <a href="clientes" class="menu-link">
                 <i class="menu-icon tf-icons ti ti-setting">
                 <img width="20" height="20" src="https://img.icons8.com/windows/32/Production-order.png" alt="Production-order"/>
                 </i>
-                <div data-i18n="Configuraciones">Configuraciones</div>
+                <div data-i18n="clientes">clientes</div>
             </a>
         </li>
     </ul>
